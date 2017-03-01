@@ -35,7 +35,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args callback:(RCTResponseSenderBlock)cal
     if (tintColorString) {
         UIColor *tintColor = [RCTConvert UIColor:tintColorString];
         if ([self.safariView respondsToSelector:@selector(setPreferredControlTintColor:)]) {
-            [self.safariView setPreferredControlTintColor:tintColor];
+            // [self.safariView setPreferredControlTintColor:tintColor];
         } else {
             [self.safariView.view setTintColor:tintColor];
         }
@@ -45,7 +45,7 @@ RCT_EXPORT_METHOD(show:(NSDictionary *)args callback:(RCTResponseSenderBlock)cal
     if (barTintColorString) {
         UIColor *barTintColor = [RCTConvert UIColor:barTintColorString];
         if ([self.safariView respondsToSelector:@selector(setPreferredBarTintColor:)]) {
-            [self.safariView setPreferredBarTintColor:barTintColor];
+            // [self.safariView setPreferredBarTintColor:barTintColor];
         }
     }
 
